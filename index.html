@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masoterapia a Domicilio - Bienestar en tu Hogar</title>
+    
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de Tailwind (opcional, para fuentes) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-green': {
+                            100: '#f0fdf4',
+                            300: '#bef264',
+                            500: '#84cc16',
+                            700: '#4d7c0f',
+                            900: '#1a2e05'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Estilos básicos -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- ===== Header y Navegación ===== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Tu Nombre o Logo -->
+            <a href="#" class="text-2xl font-bold text-brand-700">Bienestar en Casa</a>
+            
+            <!-- Links de Navegación -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#servicios" class="text-gray-600 hover:text-brand-700 transition-colors">Servicios</a>
+                <a href="#testimonios" class="text-gray-600 hover:text-brand-700 transition-colors">Testimonios</a>
+                <a href="#fotos" class="text-gray-600 hover:text-brand-700 transition-colors">Galería</a>
+                <a href="#contacto" class="text-gray-600 hover:text-brand-700 transition-colors">Contacto</a>
+            </div>
+            
+            <!-- Botón CTA (Call to Action) -->
+            <a href="#contacto" class="bg-brand-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-700 transition-colors shadow-sm">
+                Agendar Cita
+            </a>
+        </nav>
+    </header>
+
+    <!-- ===== Sección Hero ===== -->
+    <section id="inicio" class="relative pt-16 md:pt-24 pb-24">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Columna de Texto -->
+            <div class="text-center md:text-left">
+                <span class="text-brand-700 font-semibold uppercase">Masoterapia Profesional a Domicilio</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 my-4 leading-tight">
+                    Alivio y Relajación <span class="text-brand-500">sin salir de tu Hogar</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Llevamos la camilla, aceites y todo lo necesario para transformar tu espacio en un oasis de bienestar. Disfruta de un masaje profesional con la comodidad que mereces.
+                </p>
+                <a href="#contacto" class="bg-brand-500 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-brand-700 transition-colors shadow-lg">
+                    Quiero mi Masaje
+                </a>
+            </div>
+            
+            <!-- Columna de Imagen -->
+            <div class="relative">
+                <img src="./img/imagen1.png" 
+                     alt="[Imagen de una persona recibiendo un masaje en un ambiente hogareño]" 
+                     class="rounded-2xl shadow-2xl w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Sección Servicios ===== -->
+    <section id="servicios" class="py-20 bg-brand-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                Tratamientos personalizados para cada necesidad, enfocados en tu recuperación y bienestar integral.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tarjeta de Servicio 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="./img/imagen2.png" alt="[Imagen de masaje descontracturante]" class="rounded-lg mb-6 w-full object-cover h-40">
+                    <h3 class="text-2xl font-bold mb-3">Masaje Descontracturante</h3>
+                    <p class="text-gray-600">
+                        Ideal para liberar nudos y tensiones musculares profundas causadas por el estrés, malas posturas o ejercicio.
+                    </p>
+                </div>
+                
+                <!-- Tarjeta de Servicio 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="./img/imagen3.png" alt="[Imagen de masaje de relajación]" class="rounded-lg mb-6 w-full object-cover h-40">
+                    <h3 class="text-2xl font-bold mb-3">Masaje de Relajación</h3>
+                    <p class="text-gray-600">
+                        Una experiencia suave y fluida diseñada para reducir el estrés, calmar la mente y promover un descanso profundo.
+                    </p>
+                </div>
+                
+                <!-- Tarjeta de Servicio 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/300x200/84cc16/ffffff?text=Drenaje+Linf%C3%A1tico" alt="[Imagen de drenaje linfático]" class="rounded-lg mb-6 w-full object-cover h-40">
+                    <h3 class="text-2xl font-bold mb-3">Drenaje Linfático</h3>
+                    <p class="text-gray-600">
+                        Técnica manual suave que estimula el sistema linfático para eliminar toxinas y reducir la retención de líquidos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== Sección Testimonios ===== -->
+    <section id="testimonios" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Clientes Satisfechos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg relative">
+                    <p class="text-gray-600 italic text-lg mb-6">
+                        "¡El mejor masaje que he recibido! La puntualidad y profesionalismo son de primer nivel. La camilla es muy cómoda y la música ayuda a relajarse. 100% recomendado."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/eeeeee/aaaaaa?text=M.G." alt="[Foto de clienta María G.]" class="w-14 h-14 rounded-full mr-4 border-2 border-brand-300">
+                        <div>
+                            <h4 class="font-bold text-brand-900">María G.</h4>
+                            <span class="text-sm text-gray-500">Cliente Frecuente</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg relative">
+                    <p class="text-gray-600 italic text-lg mb-6">
+                        "Sufro de mucho dolor de espalda por el teletrabajo. El masaje descontracturante fue increíble. Noté el alivio de inmediato. La comodidad de estar en casa no tiene precio."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/eeeeee/aaaaaa?text=J.P." alt="[Foto de cliente Juan P.]" class="w-14 h-14 rounded-full mr-4 border-2 border-brand-300">
+                        <div>
+                            <h4 class="font-bold text-brand-900">Juan P.</h4>
+                            <span class="text-sm text-gray-500">Cliente de Oficina</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg relative">
+                    <p class="text-gray-600 italic text-lg mb-6">
+                        "Muy profesional. Llegó con todo lo necesario, armó la camilla súper rápido y el ambiente fue perfecto. Me sentí renovada después de la sesión de relajación."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/eeeeee/aaaaaa?text=C.V." alt="[Foto de clienta Carolina V.]" class="w-14 h-14 rounded-full mr-4 border-2 border-brand-300">
+                        <div>
+                            <h4 class="font-bold text-brand-900">Carolina V.</h4>
+                            <span class="text-sm text-gray-500">Cliente Satisfecha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Sección Galería de Fotos ===== -->
+    <section id="fotos" class="py-20 bg-brand-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Nuestro Ambiente en tu Hogar</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://placehold.co/400x400/bef264/4d7c0f?text=Camilla+Port%C3%A1til" alt="[Foto de la camilla portátil instalada]" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/400x400/bef264/4d7c0f?text=Aceites+Esenciales" alt="[Foto de aceites esenciales y velas]" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/400x400/bef264/4d7c0f?text=Toallas+Limpias" alt="[Foto de toallas limpias y dobladas]" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/400x400/bef264/4d7c0f?text=Ambiente+Relajante" alt="[Foto de un detalle de la sesión]" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Sección Contacto (Formulario) ===== -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Columna de Información -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Agenda tu Cita Hoy</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        ¡El primer paso hacia tu bienestar! Completa el formulario y te contactaré a la brevedad para coordinar tu sesión.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-4">
+                        También puedes contactarme directamente por:
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-lg">
+                            <span class="bg-brand-100 text-brand-700 p-2 rounded-full mr-3">
+                                <!-- Icono de WhatsApp (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.451 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.907 6.012l-1.34 4.935 5.063-1.323z"/></svg>
+                            </span>
+                            +56 9 1234 5678 (WhatsApp)
+                        </li>
+                        <li class="flex items-center text-lg">
+                             <span class="bg-brand-100 text-brand-700 p-2 rounded-full mr-3">
+                                <!-- Icono de Email (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </span>
+                            tu-email@masoterapia.cl
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna de Formulario -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-2xl">
+                    <form id="contactForm">
+                        <!-- Mensaje de éxito (oculto por defecto) -->
+                        <div id="successMessage" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-6" role="alert">
+                            <strong class="font-bold">¡Mensaje Enviado!</strong>
+                            <span class="block sm:inline">Gracias por contactarme. Te responderé a la brevedad.</span>
+                        </div>
+                    
+                        <div class="mb-5">
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <div class="mb-5">
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Teléfono (WhatsApp)</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <div class="mb-5">
+                            <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">Servicio de Interés</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white">
+                                <option>Masaje Descontracturante</option>
+                                <option>Masaje de Relajación</option>
+                                <option>Drenaje Linfático</option>
+                                <option>Otro (consultar)</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Mensaje (Opcional)</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500" placeholder="Cuéntame sobre tu dolencia o preferencia de horario..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-brand-700 text-white font-bold text-lg px-8 py-3 rounded-lg hover:bg-brand-900 transition-colors shadow-lg">
+                                Enviar Solicitud
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold text-white mb-3">Bienestar en Casa</p>
+            <p class="mb-4">Masoterapia profesional en la comodidad de tu hogar.</p>
+            <!-- Aquí puedes agregar links a tus redes sociales si tienes -->
+            <p class="text-sm">&copy; 2025 [Tu Nombre Aquí]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ===== Script para el Formulario ===== -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Prevenimos el envío real del formulario
+            event.preventDefault();
+            
+            // Simulamos un envío exitoso
+            // Aquí es donde en el futuro podrías agregar un servicio como Formspree o Netlify Forms
+            
+            const form = event.target;
+            const successMessage = document.getElementById('successMessage');
+            
+            // Mostramos el mensaje de éxito
+            successMessage.classList.remove('hidden');
+            
+            // Limpiamos el formulario
+            form.reset();
+            
+            // Ocultamos el mensaje después de 5 segundos
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+            
+            // Hacemos scroll suave hacia el mensaje de éxito
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+
+</body>
+</html>
